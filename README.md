@@ -5,8 +5,8 @@ Simple graph experiments
 ## Research Workflow
 ```mermaid
 graph TD
-    Anaconda-->B;
-    Anaconda-->C;
-    B-->D;
-    C-->D;
+    Anaconda-->Baltic;
+    Anaconda-->Condo;
+    Baltic-->Dog;
+    Condo-->Anaconda;
 ```
