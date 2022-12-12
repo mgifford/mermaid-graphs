@@ -16,4 +16,10 @@ graph TD
     ProactiveAccessibilityTestingUXResearch-->UXResearchReactive;
     UXResearchReactive-->ReactiveAccessibilityTesting;
     ReactiveAccessibilityTesting-->DeployedSystem;
+    SprintBacklog-->Sprint;
+    Sprint-->Scrum;
+    Scrum-->ProaciveAccessibilityTestingSprint;
+    ProaciveAccessibilityTestingSprint-->ShipableProduct;
+    ShipableProduct-->AccessibilityValidationTesting;
+    AccessibilityValidationTesting-->DeployedSystem;
 ```
