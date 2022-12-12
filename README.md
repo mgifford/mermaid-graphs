@@ -5,8 +5,8 @@ Simple graph experiments
 ## Research Workflow
 ```mermaid
 graph TD
-    Anaconda-->Baltic;
-    Anaconda-->Condo;
+    Wireframe-->UX Research;
+    UX Research-->Wireframe;
     Baltic-->Dog;
     Condo-->Anaconda;
 ```
