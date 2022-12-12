@@ -5,8 +5,15 @@ Simple graph experiments
 ## Research Workflow
 ```mermaid
 graph TD
-    Wireframe-->'UX Research';
-    'UX Research'-->Wireframe;
-    Baltic-->Dog;
-    Condo-->Anaconda;
+    Wireframe-->UXResearch;
+    UXResearch-->Wireframe;
+    Wireframe-->ProactiveAccessibilityTestingWireframe;
+    ProactiveAccessibilityTestingWireframe-->ProductBacklog;
+    ProductBacklog-->SprintBacklog;
+    ProductBacklog-->ProactiveAccessibilityTestingUXDesign;
+    ProductBacklog-->ProactiveAccessibilityTestingUXResearch;
+    ProactiveAccessibilityTestingUXDesign-->Wireframe;
+    ProactiveAccessibilityTestingUXResearch-->UXResearchReactive;
+    UXResearchReactive-->ReactiveAccessibilityTesting;
+    ReactiveAccessibilityTesting-->DeployedSystem;
 ```
