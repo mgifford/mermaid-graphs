@@ -42,7 +42,7 @@ graph TD
     SetupDDev-->BuildSite;
     SetupDDev-->ImportDatabase;
     BuildSite-->AccessibilityTests;
-    ImportDatabase-->AccessibilityTests;
+    ImportDatabase-->AccessibilityTests{Accessibility Tests};
     AccessibilityTests --> |NoErrors| AccessibilityTestsOk[OK]
     AccessibilityTestsOk-->CypressTests;
     CypressTests-->SonarQubeScan;
