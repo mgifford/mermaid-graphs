@@ -12,6 +12,6 @@ graph TD
     DidItFindBarriers --> |No| SendForPDFAudit[Send for PDF accessibility audit]
     SendForPDFAudit --> DidAuditFindBarriers[Did the audit find barriers]
     DidAuditFindBarriers --> |Yes| AskAuthorToTryHarder[Ask author to try harder];
-    DidAuditFindBarriers --> |No| PostToSite[Send for PDF accessibility audit]
+    DidAuditFindBarriers --> |No| PostToSite[Post to the site]
     PostToSite-->End;
 ```
