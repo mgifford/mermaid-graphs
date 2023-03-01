@@ -14,3 +14,38 @@ graph TD
     ImportDatabase-->AccessibilityTests;
     AccessibilityTests-->End;
 ```
+
+
+## Workflow 2
+
+```mermaid
+graph TD
+    Start-->CheckoutCode;
+    CheckoutCode-->SetupDDev;
+    SetupDDev-->BuildSite;
+    SetupDDev-->ImportDatabase;
+    BuildSite-->AccessibilityTests;
+    ImportDatabase-->AccessibilityTests;
+    AccessibilityTests-->CypressTests;
+    CypressTests-->SonarQubeScan;
+    SonarQubeScan-->PushCodeToAcquia;
+    PushCodeToAcquia-->End;
+```
+
+
+## Workflow 2
+
+```mermaid
+graph TD
+    Start-->CheckoutCode;
+    CheckoutCode-->SetupDDev;
+    SetupDDev-->BuildSite;
+    SetupDDev-->ImportDatabase;
+    BuildSite-->AccessibilityTests;
+    ImportDatabase-->AccessibilityTests;
+    AccessibilityTests-->CypressTests;
+    CypressTests-->SonarQubeScan;
+    SonarQubeScan-->PushCodeToAcquia;
+    PushCodeToAcquia-->End;
+```
+
