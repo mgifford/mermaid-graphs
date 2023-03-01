@@ -43,7 +43,7 @@ graph TD
     SetupDDev-->ImportDatabase;
     BuildSite-->AccessibilityTests;
     ImportDatabase-->AccessibilityTests;
-    AccessibilityTests > |{No Errors}| AccessibilityTestsOk[OK]
+    AccessibilityTests > |NoErrors| AccessibilityTestsOk[OK]
     AccessibilityTestsOk-->CypressTests;
     CypressTests-->SonarQubeScan;
     SonarQubeScan-->PushCodeToAcquia;
