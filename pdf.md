@@ -10,8 +10,8 @@ graph TD
     simplA11yPDFCrawler-->DidItFindBarriers{Did it find barriers?};
     DidItFindBarriers --> |Yes| AskAuthorToTryHarder[Ask author to try harder];
     DidItFindBarriers --> |No| SendForPDFAudit[Send for PDF accessibility audit]
-    SendForPDFAudit --> AuditResults[Audit results]
-    DidItFindBarriers --> |Yes| AskAuthorToTryHarder[Ask author to try harder];
-    DidItFindBarriers --> |No| PostToSite[Send for PDF accessibility audit]
+    SendForPDFAudit --> DidAuditFindBarriers[Did the audit find barriers]
+    DidAuditFindBarriers --> |Yes| AskAuthorToTryHarder[Ask author to try harder];
+    DidAuditFindBarriers --> |No| PostToSite[Send for PDF accessibility audit]
     PostToSite-->End;
 ```
