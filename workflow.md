@@ -38,13 +38,13 @@ graph TD
 ```mermaid
 graph TD
     Start-->CheckoutCode;
-    CheckoutCode-->SetupDDev{Setup DDev};
+    CheckoutCode-->SetupDDev[Setup DDev];
     SetupDDev-->BuildSite;
     SetupDDev-->ImportDatabase;
     BuildSite-->AccessibilityTests;
     ImportDatabase-->AccessibilityTests{Accessibility Tests};
-    AccessibilityTests --> |NoErrors| AccessibilityTestsOk[OK]
-    AccessibilityTestsOk-->CypressTests;
+    AccessibilityTests --> |No Errors| CypressTests;
+    AccessibilityTests --> |Errors| CommitFails[Commit Fails]
     CypressTests-->SonarQubeScan;
     SonarQubeScan-->PushCodeToAcquia;
     PushCodeToAcquia-->End;
