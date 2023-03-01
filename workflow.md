@@ -33,17 +33,18 @@ graph TD
 ```
 
 
-## Workflow 2
+## Workflow 3
 
 ```mermaid
 graph TD
     Start-->CheckoutCode;
-    CheckoutCode-->SetupDDev;
+    CheckoutCode-->SetupDDev{Setup DDev};
     SetupDDev-->BuildSite;
     SetupDDev-->ImportDatabase;
     BuildSite-->AccessibilityTests;
     ImportDatabase-->AccessibilityTests;
-    AccessibilityTests-->CypressTests;
+    AccessibilityTests > |No Errors| AccessibilityTestsOk[OK]
+    AccessibilityTestsOk-->CypressTests;
     CypressTests-->SonarQubeScan;
     SonarQubeScan-->PushCodeToAcquia;
     PushCodeToAcquia-->End;
