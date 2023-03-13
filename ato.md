@@ -14,5 +14,6 @@ Categorize[[Categorize the system within the organization based on potential adv
 Select[[Select relevant security controls]] --> Implement
 Implement[[Implement the security controls]] --> Assess
 Assess[[Assess the effectiveness of the security controls]] --> Authorize
-Authorize[[Authorize the system‍]] --> Monitor[[Monitor the system]]
+Authorize[[Authorize the system‍]] --> Monitor
+Monitor[[Monitor the system]]
 ```
