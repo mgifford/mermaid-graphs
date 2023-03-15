@@ -1,6 +1,8 @@
 # Free Software Licensing
 
 ```mermaid
+graph TD
+
 IdentifyProject[Identify the independent works] --> Identify3rdParty
 Identify3rdParty[Identify Third party material by reference & local] --> UpstreamLocation
 UpstreamLocation[Identify the upstream location of the 3rd party materials] --> Problems
