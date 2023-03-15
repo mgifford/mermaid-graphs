@@ -9,7 +9,17 @@ UpstreamLocation[Identify the upstream location of the 3rd party materials] --> 
 Problems[Identify any licensing problems] --> NoProblems
 NoProblems[Choose license of the program] --> LicenseChoice
 Problems --> unlicensed[unlicensed materials]
-LicenseChoice{Choose your license} --> contractRequirements
+Problems --> incompatability[incompatibility licenses]
+Problems --> restrictions[licensing restrictions]
+unlicensed --> stop[Find other code?]
+incompatability --> stop[Find other code?]
+restrictions --> stop[Find other code?]
+LicenseChoice{Choose your license}  --> GPL
+LicenseChoice --> MIT
+LicenseChoice --> CC0
+GPL--> contractRequirements
+MIT--> contractRequirements
+CC0--> contractRequirements
 contractRequirements[Identify contract requirements] --> CreatLicense
 CreatLicense[Create LICENSE file] --> UpdateReadme
 UpdateReadme[update README]
