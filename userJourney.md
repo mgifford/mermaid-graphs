@@ -1,6 +1,12 @@
 # User Journey
 
 ```mermaid
+
+      accTitle: User Journey
+      accDescr {
+ How users navigate our site.
+         }
+
 journey
     title Find out when garbage is picked up
     section Visit Ottawa.ca
