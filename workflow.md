@@ -6,6 +6,10 @@ Simple accessibility workflow
 
 ```mermaid
 graph TD
+
+      accTitle: Workflow 1
+      accDescr {  Workflow   }
+
     Start-->CheckoutCode;
     CheckoutCode-->SetupDDev;
     SetupDDev-->BuildSite;
@@ -20,6 +24,10 @@ graph TD
 
 ```mermaid
 graph TD
+
+      accTitle: Workflow 2
+      accDescr {  Workflow   }
+
     Start-->CheckoutCode;
     CheckoutCode-->SetupDDev;
     SetupDDev-->BuildSite;
@@ -37,6 +45,10 @@ graph TD
 
 ```mermaid
 graph TD
+
+      accTitle: Workflow 3
+      accDescr {  Workflow   }
+
     Start-->CheckoutCode;
     CheckoutCode-->SetupDDev[Setup DDev];
     SetupDDev-->BuildSite;
