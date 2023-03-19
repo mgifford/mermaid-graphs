@@ -2,6 +2,10 @@
 
 ```mermaid
 journey
+
+      accTitle: User Journey
+      accDescr {  Visit from Ottawa   }
+
     title Find out when garbage is picked up
     section Visit Ottawa.ca
       Navigation: Look for the title Garbage in the menu
