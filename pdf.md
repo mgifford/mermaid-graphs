@@ -2,6 +2,12 @@
 
 ```mermaid
 graph TD
+
+      accTitle: Evaluate PDFs
+      accDescr {
+ Accessibility evaluation process.
+         }
+
     Start-->YouHaveAPDF[You have a PDF];
     YouHaveAPDF-->AssumeInaccessible[Assume it is inaccessible];
     AssumeInaccessible-->AskWhyNotHTNML[Ask why this isn't an HTML document];
