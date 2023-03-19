@@ -1,6 +1,7 @@
 # User Journey
 
 ```mermaid
+graph TD
 
       accTitle: User Journey
       accDescr {
