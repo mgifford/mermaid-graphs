@@ -2,6 +2,10 @@
 
 ```mermaid
 graph TD
+      accTitle: Agile Sprint
+      accDescr {
+ Description of the sprint cycle.
+         }
 
 ProductOwner --> Team
 Team --> Backlog
