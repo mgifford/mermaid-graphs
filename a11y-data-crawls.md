@@ -4,15 +4,13 @@
 
 ```mermaid
 graph TD
-    DomainList-->Crawl4URLs;
-    Crawl4URLs[Crawl with ??]-->DumpToMySQL;
-    DumpToMySQL-->ScanWithAxe;
-    ScanWithAxe-->DumpToMySQL;
-    DumpToMySQL-->SanWithPlainLanguage;
-    SanWithPlainLanguage-->DumpToMySQL;
-    DumpToMySQL-->AggregateData;
-    AggregateData-->PushToGoogleSheets;
-    PushToGoogleSheets-->DisplayChartsAndResults;
+    DomainList-->CrawlAndScan;
+    CrawlAndScan-->ScanWithAxe;
+    ScanWithAxe-->AggregateData;
+    CrawlAndScan-->SanWithPlainLanguage;
+    SanWithPlainLanguage-->AggregateData;
+    AggregateData-->PushToBigQuery;
+    PushToBigQuery-->DisplayChartsAndResults;
     DisplayChartsAndResults-->ExportToHTML;
 ```
 
@@ -20,7 +18,7 @@ graph TD
 
 ```mermaid
 graph TD
-   GotoGoogleSheet-->FindDomain;
+   DisplayChartsAndResults-->FindDomain;
    FindDomain-->SeeChangeOverTime
    SeeChangeOverTime-->SeeDashboard
    SeeDashboard-->DigDownToTopIssues;
