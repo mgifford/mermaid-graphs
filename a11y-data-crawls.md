@@ -1,6 +1,6 @@
 # Experimenting with big government data
 
-## Research Workflow
+## Proposed Workflow
 
 ```mermaid
 graph TD
