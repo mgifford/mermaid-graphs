@@ -8,6 +8,8 @@ graph TD
     Crawl4URLs[Crawl with ??]-->DumpToMySQL;
     DumpToMySQL-->ScanWithAxe;
     ScanWithAxe-->DumpToMySQL;
+    DumpToMySQL-->SanWithPlainLanguage;
+    SanWithPlainLanguage-->DumpToMySQL;
     DumpToMySQL-->AggregateData;
     AggregateData-->PushToGoogleSheets;
     PushToGoogleSheets-->DisplayChartsAndResults;
