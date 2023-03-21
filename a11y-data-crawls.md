@@ -7,12 +7,12 @@ graph TD
     DomainList-->Crawl4URLs;
     Crawl4URLs[Use Crawlee.dev]-->DumpToPostgres;
     DumpToPostgres-->ScanWithAxe;
-    DumpToPostgres-->SanWithPlainLanguage;
+    DumpToPostgres-->ScanWithPlainLanguage[Plain Language];
     DumpToPostgres--> Wappalyzer[CMS];
     DumpToPostgres--> BrokenJavaScript[Broken JavaScript];
     ScanWithAxe-->AddToPostgres;
     BrokenJavaScript-->AddToPostgres;
-    SanWithPlainLanguage-->AddToPostgres;
+    ScanWithPlainLanguage-->AddToPostgres;
     Wappalyzer-->AddToPostgres;
     AddToPostgres-->AggregateData["Pre-process data to find patterns"]
     AggregateData-->PushToGoogleSheets;
