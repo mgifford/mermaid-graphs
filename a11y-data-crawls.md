@@ -5,18 +5,20 @@
 ```mermaid
 graph TD
     DomainList-->Crawl4URLs;
-    Crawl4URLs[Crawl with ??]-->DumpToMySQL;
-    DumpToMySQL-->ScanWithAxe;
-    ScanWithAxe-->DumpToMySQL;
-    DumpToMySQL-->SanWithPlainLanguage;
-    SanWithPlainLanguage-->DumpToMySQL;
-    DumpToMySQL-->AggregateData;
+    Crawl4URLs[Crawl with ??]-->DumpToPostgres;
+    DumpToPostgres-->ScanWithAxe;
+    DumpToPostgres-->SanWithPlainLanguage;
+    DumpToPostgres--> Wappalyzer;
+    ScanWithAxe-->AddToPostgres;
+    SanWithPlainLanguage-->AddToPostgres;
+    Wappalyzer-->AddToPostgres;
+    AddToPostgres-->AggregateData
     AggregateData-->PushToGoogleSheets;
     PushToGoogleSheets-->DisplayChartsAndResults;
     DisplayChartsAndResults-->ExportToHTML;
 ```
 
-## Proposed Client Workflow 
+## Proposed Client Workflow
 
 ```mermaid
 graph TD
