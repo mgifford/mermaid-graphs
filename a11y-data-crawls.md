@@ -12,10 +12,10 @@ graph TD
     DumpToPostgres-->BrokenJavaScript[Broken JavaScript];
     DumpToPostgres-->ScanWithAxe;
     DumpToPostgres-->AltText;
-    ScanWithAxe-->AddToPostgres;
     BrokenLinks-->AddToPostgres;
     BrokenJavaScript-->AddToPostgres;
     ScanWithPlainLanguage-->AddToPostgres;
+    ScanWithAxe-->AddToPostgres;
     AltText-->AddToPostgres;
     Wappalyzer-->AddToPostgres;
     AddToPostgres-->AggregateData["Pre-process data to find patterns"]
