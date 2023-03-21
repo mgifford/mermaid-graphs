@@ -8,8 +8,10 @@ graph TD
     Crawl4URLs[Use Crawlee.dev]-->DumpToPostgres;
     DumpToPostgres-->ScanWithAxe;
     DumpToPostgres-->SanWithPlainLanguage;
-    DumpToPostgres--> Wappalyzer;
+    DumpToPostgres--> Wappalyzer[CMS];
+    DumpToPostgres--> JavaScriptErrors;
     ScanWithAxe-->AddToPostgres;
+    JavaScriptErrors-->AddToPostgres;
     SanWithPlainLanguage-->AddToPostgres;
     Wappalyzer-->AddToPostgres;
     AddToPostgres-->AggregateData["Pre-process data to find patterns"]
