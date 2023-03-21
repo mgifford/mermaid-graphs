@@ -21,13 +21,11 @@ graph TD
     GreenProject-->Yes;
 ```
 
-## Ignore
+## Values workflow
 
 ```mermaid
 graph TD
-   GotoGoogleSheet-->FindDomain;
-   FindDomain-->SeeChangeOverTime
-   SeeChangeOverTime-->SeeDashboard
-   SeeDashboard-->DigDownToTopIssues;
-   DigDownToTopIssues-->ExportToHTML;
+   Tier1[[Values aligned]]-->Yes;
+   Tier2[[Organization aligned]]-->Yes
+   Tier3[[Smaller]]-->SeeDashboard
 ```
