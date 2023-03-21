@@ -8,11 +8,15 @@ graph TD
     Crawl4URLs[Use Crawlee.dev]-->DumpToPostgres;
     DumpToPostgres-->ScanWithAxe;
     DumpToPostgres-->ScanWithPlainLanguage[Plain Language];
-    DumpToPostgres--> Wappalyzer[CMS];
-    DumpToPostgres--> BrokenJavaScript[Broken JavaScript];
+    DumpToPostgres-->Wappalyzer[CMS];
+    DumpToPostgres-->BrokenJavaScript[Broken JavaScript];
+    DumpToPostgres-->ScanWithAxe;
+    DumpToPostgres-->AltText;
     ScanWithAxe-->AddToPostgres;
+    BrokenLinks-->AddToPostgres;
     BrokenJavaScript-->AddToPostgres;
     ScanWithPlainLanguage-->AddToPostgres;
+    AltText-->AddToPostgres;
     Wappalyzer-->AddToPostgres;
     AddToPostgres-->AggregateData["Pre-process data to find patterns"]
     AggregateData-->PushToGoogleSheets;
