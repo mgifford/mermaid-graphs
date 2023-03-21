@@ -11,11 +11,11 @@ graph TD
     AgencyColor--> RedAgency;
     RedAgency-->GreenProject;
     AmberAgency-->GreenProject;
-    RedProject-->GreenProject;
+    GreenAgency-->RedProject;
+    AmberAgency-->RedProject;
+    GreenAgency-->GreenProject;
     RedProject-->No;
     GreenProject-->Yes;
-
-
 ```
 
 ## Ignore
