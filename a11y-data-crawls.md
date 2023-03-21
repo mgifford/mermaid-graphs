@@ -5,7 +5,7 @@
 ```mermaid
 graph TD
     DomainList-->Crawl4URLs;
-    Crawl4URLs[Crawl with ??]-->DumpToPostgres;
+    Crawl4URLs[Use Crawlee.dev]-->DumpToPostgres;
     DumpToPostgres-->ScanWithAxe;
     DumpToPostgres-->SanWithPlainLanguage;
     DumpToPostgres--> Wappalyzer;
