@@ -12,7 +12,7 @@ graph TD
     ScanWithAxe-->AddToPostgres;
     SanWithPlainLanguage-->AddToPostgres;
     Wappalyzer-->AddToPostgres;
-    AddToPostgres-->AggregateData
+    AddToPostgres-->AggregateData["Pre-process data to find patterns"]
     AggregateData-->PushToGoogleSheets;
     PushToGoogleSheets-->DisplayChartsAndResults;
     DisplayChartsAndResults-->ExportToHTML;
