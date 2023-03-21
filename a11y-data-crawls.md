@@ -9,9 +9,9 @@ graph TD
     DumpToPostgres-->ScanWithAxe;
     DumpToPostgres-->SanWithPlainLanguage;
     DumpToPostgres--> Wappalyzer[CMS];
-    DumpToPostgres--> JavaScriptErrors;
+    DumpToPostgres--> BrokenJavaScript[Broken JavaScript];
     ScanWithAxe-->AddToPostgres;
-    JavaScriptErrors-->AddToPostgres;
+    BrokenJavaScript-->AddToPostgres;
     SanWithPlainLanguage-->AddToPostgres;
     Wappalyzer-->AddToPostgres;
     AddToPostgres-->AggregateData["Pre-process data to find patterns"]
