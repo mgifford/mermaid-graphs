@@ -4,11 +4,10 @@
 
 ```mermaid
 graph TD
-    CheckAgency-->IsGreen{{Is Green}};
-    IsGreen-->AgencyColor;
-    AgencyColor-->GreenAgency;
-    AgencyColor-->AmberAgency;
-    AgencyColor--> RedAgency;
+    CheckAgency-->IsGreen{{Agency Color}};
+    IsGreen-->GreenAgency[T1 Green];
+    IsGreen-->AmberAgency[T1 Amber];
+    IsGreen--> RedAgency[T1 Red];
     RedAgency-->GreenProject;
     RedAgency-->No;
     AmberAgency-->GreenProject;
