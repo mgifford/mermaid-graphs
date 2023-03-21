@@ -1,6 +1,6 @@
 # Impact Direction for Sales
 
-## Sales Workflow
+## Agency Workflow
 
 ```mermaid
 graph TD
