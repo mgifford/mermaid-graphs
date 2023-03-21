@@ -25,7 +25,9 @@ graph TD
 
 ```mermaid
 graph TD
+   DITAP-->Tier1;
+   Accessibility-->Tier1;
    Tier1[[Values aligned]]-->Yes;
    Tier2[[Organization aligned]]-->Yes
-   Tier3[[Smaller]]-->SeeDashboard
+   Tier3[[Smaller]]-->Maybe
 ```
