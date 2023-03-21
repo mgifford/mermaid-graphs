@@ -10,15 +10,15 @@ graph TD
     DumpToPostgres-->ScanWithPlainLanguage[Plain Language];
     DumpToPostgres-->Wappalyzer[CMS];
     DumpToPostgres-->BrokenJavaScript[Broken JavaScript];
-    DumpToPostgres-->ScanWithAxe;
     DumpToPostgres-->AltText;
+    DumpToPostgres-->BrokenLinks;
     BrokenLinks-->AddToPostgres;
     BrokenJavaScript-->AddToPostgres;
     ScanWithPlainLanguage-->AddToPostgres;
     ScanWithAxe-->AddToPostgres;
     AltText-->AddToPostgres;
     Wappalyzer-->AddToPostgres;
-    AddToPostgres-->AggregateData["Pre-process data to find patterns"]
+    AddToPostgres-->AggregateData["Pre-process data to find patterns"];
     AggregateData-->PushToGoogleSheets;
     PushToGoogleSheets-->DisplayChartsAndResults;
     DisplayChartsAndResults-->ExportToHTML;
