@@ -10,6 +10,7 @@ graph TD
     AgencyColor-->AmberAgency;
     AgencyColor--> RedAgency;
     RedAgency-->GreenProject;
+    RedAgency-->No;
     AmberAgency-->GreenProject;
     GreenAgency-->RedProject;
     AmberAgency-->RedProject;
