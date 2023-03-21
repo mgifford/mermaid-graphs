@@ -1,5 +1,7 @@
 # Impact Direction for Sales
 
+There are multiple ways to think about how to apporach this.
+
 ## Agency Workflow
 
 ```mermaid
@@ -29,7 +31,7 @@ graph TD
    Accessibility[[Accessibility Focus]]-->Tier1;
    Sustainability[[Environmental Sustainability Focus]]-->Tier1;
    Open[[Open Government Focus]]-->Tier1;
-   Tier1[[Values aligned]]-->Yes;
-   Tier2[[Organization aligned]]-->Yes
-   Tier3[[Smaller]]-->Maybe
+   Tier1[[T1 Values aligned]]-->Yes;
+   Tier2[[T2 Organization aligned]]-->Yes
+   Tier3[[T3 Smaller]]-->Maybe
 ```
