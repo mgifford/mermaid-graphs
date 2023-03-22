@@ -40,3 +40,23 @@ graph TD
    SeeDashboard-->DigDownToTopIssues;
    DigDownToTopIssues-->ExportToHTML;
 ```
+
+## Related Accessibility Data
+
+```mermaid
+graph TD
+
+      accTitle: Accessibility Data
+      accDescr {
+Basics for accessibility data.
+         }
+
+    WCAGSC-->axeRule;
+    WCAGSC-->WCAGTechnique;
+    axeRule-->WCAGTechnique;
+    axeRule-->DisabilityType;
+    WCAGSC-->USFunctionalPerformanceCriteria;
+    WCAGSC-->EUFunctionalPerformanceStatement;
+    DisabilityType-->USFunctionalPerformanceCriteria;
+    DisabilityType-->EUFunctionalPerformanceStatement;
+```
