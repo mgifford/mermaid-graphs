@@ -1,9 +1,15 @@
 # Experimenting with big government data
 
-## Proposed Crawl Workflow
+## Proposed A11y Crawl
 
 ```mermaid
 graph TD
+
+      accTitle: Proposed A11y Crawl
+      accDescr {
+Basic workflow off elements of a gov-wide crawl.
+         }
+
     DomainList-->Crawl4URLs;
     Crawl4URLs[Use Crawlee.dev]-->DumpToPostgres;
     DumpToPostgres-->ScanWithAxe;
