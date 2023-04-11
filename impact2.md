@@ -14,6 +14,9 @@ graph TD
    ImpactResponds-->ImpactDiscusses["Point person facilitates the discussion in the Impact committee. Possibly using a rubric."];
   ImpactDiscusses-->Decision{"Impact committee decides & communicates to Sales."};
   Decision-->Discussion["If needed a discussion will happen between Sales & Impact"];
+Decision-->YesYellow{{Proceed}};
+Decision-->NoYellow{{Stop}};
+
 
   isJustificationRequired-->salesAlertsImpactsRed["Sales sends a message to @impact-committee in #sales-impact with justification"];
   salesAlertsImpactsRed-->ImpactRespondsRed["Point person from Impact acknowledges the request. (80% SLA in 1 day, others in 3 days)"];
