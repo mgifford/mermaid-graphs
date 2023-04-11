@@ -6,21 +6,15 @@ There are multiple ways to think about how to apporach this.
 
 ```mermaid
 graph TD
-    CheckAgency-->IsGreen{{Agency Color}};
-    IsGreen-->GreenAgency[T1 Green];
-    IsGreen-->AmberAgency[T1 Amber];
-    IsGreen--> RedAgency[T1 Red];
-    RedAgency-->GreenProject[T2 Green Project];
-    RedAgency-->No;
-    AmberAgency-->GreenProject;
-    GreenAgency-->RedProject[T2 Red Project];
-    AmberAgency-->RedProject;
-    GreenAgency-->GreenProject;
-    GreenGoalDITAP[T3 Green - DITAP]-->Maybe;
-    GreenGoalA11y[T3 Green - Accessibility]-->Maybe;
-    GreenGoalATO[T3 Green - OpenATO]-->Maybe;
-    RedProject-->No;
-    GreenProject-->Yes;
+    CheckColor-->IsGreen{{Proceed}};
+    CheckColor-->isYellow[Collaborate];
+    CheckColor-->isJustificationRequired["Justification Required"];
+    isYellow-->salesAlertsImpactsl["Sales Sends a message to @impact-committee in #sales-impact"];
+   salesAlertsImpacts-->ImpactResponds["Point person from Impact acknowledges the request. (80% SLA in 1 day, others in 3 days)"];
+   ImpactResponds-->ImpactDiscusses["Point person facilitates the discussion in the Impact committee. Possibly using a rubric."];
+  ImpactDiscusses-->Decision["Impact committee decides & communicates to Sales."];
+
+
 ```
 
 ## Values workflow 2
