@@ -15,8 +15,10 @@ graph TD
   ImpactDiscusses-->Decision["Impact committee decides & communicates to Sales."];
   Decision-->Discussion["If needed a discussion will happen between Sales & Impact"];
 
-  isJustificationRequired-->salesAlertsImpactsRed["Sales > Sends a message to @impact-committee in #sales-impact including: (a) time sensitivity (if any), (b) a link to the opportunity brief and any other relevant information, (c) supporting material that explains how this opportunity maps against our impact themes and avoids negative impacts"];
-  salesAlertsImpactsRed
+  isJustificationRequired-->salesAlertsImpactsRed["Sales sends a message to @impact-committee in #sales-impact with justification"];
+  salesAlertsImpactsRed-->ImpactRespondsRed["Point person from Impact acknowledges the request. (80% SLA in 1 day, others in 3 days)"];
+  ImpactRespondsRed-->ImpactDiscussesRed["Point person facilitates the discussion in the Impact committee. Possibly using a rubric."];
+  ImpactDiscusses-->DecisionRed["Impact committee decides & communicates to Sales."];
 ```
 
 ## Values workflow 2
