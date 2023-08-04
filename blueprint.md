@@ -34,6 +34,8 @@ sequenceDiagram
 
 ## Sample Customer Journey 
 
+Just taken from the [docs](https://mermaid.js.org/syntax/userJourney.html).
+
 ```mermaid
 journey
     title My working day
