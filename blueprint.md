@@ -26,9 +26,8 @@ sequenceDiagram
         Phase 1->>Phase 2: Request for items
     Phase 2->>Phase 3: Items returned
     and 
-         Phase 1->>Cart Service: Fetch items in cart
+         Phase 1->>Phase 4
         par 
-            Cart Service->>Cart Cache: Pull data from Cache
             Cart Cache->>Cart Service: Pull data from Cache
         end
     Cart Service->>Phase 3: Items returned
