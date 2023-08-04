@@ -1,5 +1,5 @@
 # Service Design Blueprint Idea
-Can we do this in Mermaid
+Can we do this in Mermaid roughly based on what I see frim this [digital template](https://www.nngroup.com/articles/service-blueprinting-template/). 
 
 
 ## Rough Workflow
