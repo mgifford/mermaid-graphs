@@ -50,6 +50,10 @@ journey
       Sit down: 5: Me
 ```
 
+## From K8
+
+Kubernetes [diagram guide](https://kubernetes.io/docs/contribute/style/diagram-guide/). Check out [how to style diagrams](https://kubernetes.io/docs/contribute/style/diagram-guide/#how-to-style-diagrams).
+
 ```mermaid
 sequenceDiagram
     actor me
