@@ -1,8 +1,10 @@
-# Service Design Blueprint Idea
+# Service Design Visualizations in Mermaid
+
+What can we do to simplify building simple semantic diagrams.
+
+## Service Design Blueprint 
+
 Can we do this in Mermaid roughly based on what I see frim this [digital template](https://www.nngroup.com/articles/service-blueprinting-template/). 
-
-
-## Rough Workflow
 
 ```mermaid
 sequenceDiagram
