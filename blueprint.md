@@ -24,6 +24,7 @@ sequenceDiagram
 sequenceDiagram
     par 
         Phase 1->>Phase 4: Time
+        Phase 2->>Phase 3: QA
     and
         Phase 1->>Phase 4: Evidence
     and
