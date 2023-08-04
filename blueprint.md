@@ -21,7 +21,7 @@ sequenceDiagram
 
 
 ```mermaid
-BlueprintDiagram
+sequenceDiagram
     par 
         Phase 1->>Phase 2: Request for items
     Phase 2->>Phase 3: Items returned
