@@ -23,10 +23,18 @@ sequenceDiagram
 ```mermaid
 sequenceDiagram
     par 
-        Phase 1->>Phase 2: Time
+        Phase 1->>Phase 4: Time
     and
-        Phase 1->>Phase 3: Evidence
-    and 
+        Phase 1->>Phase 4: Evidence
+    and
+        Phase 1->>Phase 4: Customer Actions
+    and
+        Phase 1->>Phase 4: Frontstage Actions
+    and
+        Phase 1->>Phase 4: Backstage Actions
+    and
+        Phase 1->>Phase 4: Support Processes
+    and
         Phase 1->>Phase 3: Fetch items in cart
         par 
             Phase 3->>Phase 4: Pull data from Cache
