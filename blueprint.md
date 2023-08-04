@@ -28,8 +28,8 @@ sequenceDiagram
     and 
         Phase 1->>Phase 3: Fetch items in cart
         par 
-            Phase 3->>Cart Cache: Pull data from Cache
-            Cart Cache->>Phase 3: Pull data from Cache
+            Phase 3->>Phase 4: Pull data from Cache
+            Phase 4->>Phase 3: Pull data from Cache
         end
     Phase 3->>Phase 1: Items returned
     end
