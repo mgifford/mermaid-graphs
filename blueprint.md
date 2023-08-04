@@ -38,11 +38,11 @@ sequenceDiagram
     and
         Phase 1->>Phase 4: Support Processes
     and
-        Phase 1->>Phase 3: Fetch items in cart
+        Phase 1->>Phase 3: Internal
         par 
-            Phase 3->>Phase 4: Pull data from Cache
-            Phase 4->>Phase 3: Pull data from Cache
+            Phase 3->>Phase 4: Soft Launch
+            Phase 4->>Phase 3: Hard Launch
         end
-        Phase 3->>Phase 1: Items returned
+        Phase 1->>Phase 3: Launch
     end
 ```
