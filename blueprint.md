@@ -24,7 +24,7 @@ sequenceDiagram
 sequenceDiagram
     par 
         Phase 1->>Phase 2: Request for items
-    Phase 2->>Phase 1
+    Phase 2->>UI: Items returned
     and 
         Phase 1->>Cart Service: Fetch items in cart
         par 
