@@ -23,10 +23,10 @@ sequenceDiagram
 ```mermaid
 sequenceDiagram
     par 
-        {Phase 1}->>Backend: Request for items
+        One[Phase 1]->>Backend: Request for items
     Backend->>UI: Items returned
     and 
-         {Phase 1}->>Cart Service: Fetch items in cart
+         One[Phase 1]->>Cart Service: Fetch items in cart
         par 
             Cart Service->>Cart Cache: Pull data from Cache
             Cart Cache->>Cart Service: Pull data from Cache
