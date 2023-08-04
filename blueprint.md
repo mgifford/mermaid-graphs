@@ -50,6 +50,30 @@ journey
       Sit down: 5: Me
 ```
 
+```mermaid
+%%{init:{"theme":"neutral"}}%% // init directive for theme
+sequenceDiagram
+    actor me
+    participant apiSrv as control plane<br><br>api-server
+    participant etcd as control plane<br><br>etcd datastore
+    participant cntrlMgr as control plane<br><br>controller<br>manager
+    participant sched as control plane<br><br>scheduler
+    participant kubelet as node<br><br>kubelet
+    participant container as node<br><br>container<br>runtime
+    me->>apiSrv: 1. kubectl create -f pod.yaml
+    apiSrv-->>etcd: 2. save new state
+    cntrlMgr->>apiSrv: 3. check for changes
+    sched->>apiSrv: 4. watch for unassigned pods(s)
+    apiSrv->>sched: 5. notify about pod w nodename=" "
+    sched->>apiSrv: 6. assign pod to node
+    apiSrv-->>etcd: 7. save new state
+    kubelet->>apiSrv: 8. look for newly assigned pod(s)
+    apiSrv->>kubelet: 9. bind pod to node
+    kubelet->>container: 10. start container
+    kubelet->>apiSrv: 11. update pod status
+    apiSrv-->>etcd: 12. save new state
+```
+
 ## What else
 
 Check out the [other examples](https://mermaid.js.org/syntax/examples.html).
