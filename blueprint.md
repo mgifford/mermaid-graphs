@@ -23,9 +23,14 @@ sequenceDiagram
 ```mermaid
 sequenceDiagram
     par 
-        Phase 1->>Phase 2
-    Phase 2->>Phase 3
+        Phase 1->>Phase 2: Request for items
+    Phase 2->>Phase 1
     and 
-    Phase 4
+        Phase 1->>Cart Service: Fetch items in cart
+        par 
+            Cart Service->>Cart Cache: Pull data from Cache
+            Cart Cache->>Cart Service: Pull data from Cache
+        end
+    Cart Service->>UI: Items returned
     end
 ```
