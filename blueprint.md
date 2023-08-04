@@ -47,3 +47,7 @@ journey
       Go downstairs: 5: Me
       Sit down: 5: Me
 ```
+
+## What else
+
+Check out the [other examples](https://mermaid.js.org/syntax/examples.html).
