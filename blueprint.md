@@ -22,9 +22,11 @@ sequenceDiagram
 
 ```mermaid
 sequenceDiagram
-    par 
-        Phase 1->>Phase 4: Time
+    par
+        Phase 1->>Phase 2: Discovery
         Phase 2->>Phase 3: QA
+        Phase 3->>Phase 4: Launch
+
     and
         Phase 1->>Phase 4: Evidence
     and
