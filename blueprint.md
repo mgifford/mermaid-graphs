@@ -51,7 +51,6 @@ journey
 ```
 
 ```mermaid
-%%{init:{"theme":"neutral"}}%% // init directive for theme
 sequenceDiagram
     actor me
     participant apiSrv as control plane<br><br>api-server
