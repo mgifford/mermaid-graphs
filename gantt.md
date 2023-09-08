@@ -1,6 +1,6 @@
 Testing a Gantt Chart 
 
-```
+```mermaid
 gantt
     title Drupal Migration Project
     dateFormat  YYYY-MM-DD
