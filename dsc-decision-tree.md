@@ -10,9 +10,10 @@ graph TD
 
     DSC_Matrix-->StateRepresentation(Verify that state representation is actually needed);
     StateRepresentation-->DSC_InState{Are there enough state based contract established with DSC members};
-```
+
     DSC_InState-->UseStateContract(Use existing state based contracts);
     DSC_InState-->Eligible4GSA_Schedule(Is this contract available for the GSA Schedule);
+```
     UseStateContract-->ProcurementVehicle(Finalize procurement vehicle);
     Eligible4GSA_Schedule-->ProcurementVehicle;
     ProcurementVehicle-->IssueRFP(Issue the RFP/RFI);
