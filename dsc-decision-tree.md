@@ -14,6 +14,7 @@ graph TD
     Eligible4GSA_Schedule-->ProcurementVehicle;
     ProcurementVehicle-->IssueRFP(Issue the RFP/RFI);
     IssueRFP-->Negotiation(Negotiation and Award);
+```
     Negotiation-->Payment(Payment Processing);
     Payment-->Reporting(Reporting and Compliance);
 ```
