@@ -1,7 +1,7 @@
 
 
 - 
-- Fill in DSC market research tool
+- 
 - other market research if necessary
 - find good companies, how would I find companies to do this
 - look at DSC matrix and see who is on schedule and if any are in the state
@@ -15,8 +15,8 @@
 - ## Decision Tree
 ```mermaid
 graph TD
-    "identify user needs"-->UXResearch;
-    UXResearch-->Wireframe;
+    UserNeeds{identify user needs}-->DSC_MR{Fill in DSC market research tool};
+    DSC_MR-->Wireframe;
     Wireframe-->ProactiveAccessibilityTestingWireframe;
     ProactiveAccessibilityTestingWireframe-->ProductBacklog;
     ProductBacklog-->SprintBacklog;
