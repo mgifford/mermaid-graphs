@@ -8,7 +8,7 @@ graph TD
     More_MR-->CompanyPool(Are there enough eligible DSC companies?);
     CompanyPool-->DSC_Matrix(Check the DSC matrix: <br>who is on the GSA Schedule, <br>and are in the state);
 
-    DSC_Matrix-->StateRepresentation(Verify that state representation is actually needed);
+    DSC_Matrix-->StateRepresentation(Verify that state representation <br>is actually needed);
     StateRepresentation-->DSC_InState{Are there enough state <br>based contract established <br>with DSC members};
 
     DSC_InState--> |Yes| UseStateContract(Use existing state based contracts);
