@@ -16,8 +16,8 @@
 
 ```mermaid
 graph TD
-    UserNeeds{identify user needs}-->DSC_MR{Fill in DSC market research tool};
-    DSC_MR{Fill in DSC market research tool}-->Wireframe;
+    UserNeeds(identify user needs)-->DSC_MR(Fill in DSC market research tool);
+    DSC_MR-->Wireframe;
     Wireframe-->ProactiveAccessibilityTestingWireframe;
     ProactiveAccessibilityTestingWireframe-->ProductBacklog;
     ProductBacklog-->SprintBacklog;
