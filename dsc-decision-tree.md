@@ -1,7 +1,7 @@
 
 
-- 
-- 
+## Decision Tree
+
 - other market research if necessary
 - find good companies, how would I find companies to do this
 - look at DSC matrix and see who is on schedule and if any are in the state
@@ -12,11 +12,12 @@
 - Vehicle decision made - procurement vehicle
 - Issue the RFP
 
-- ## Decision Tree
+
+
 ```mermaid
 graph TD
     UserNeeds{identify user needs}-->DSC_MR{Fill in DSC market research tool};
-    DSC_MR-->Wireframe;
+    DSC_MR{Fill in DSC market research tool};-->Wireframe;
     Wireframe-->ProactiveAccessibilityTestingWireframe;
     ProactiveAccessibilityTestingWireframe-->ProductBacklog;
     ProductBacklog-->SprintBacklog;
