@@ -3,7 +3,7 @@
 ```mermaid
 graph TD
     UserNeeds(Identify user needs)-->DSC_MR(Fill in DSC market research tool);
-    DSC_MR-->More_MR[{Do other market research if necessary}];
+    DSC_MR-->More_MR[Do other market research if necessary];
     More_MR-->CompanyPool(Are there enough eligible DSC companies?);
     CompanyPool-->DSC_Matrix(Check the DSC matrix: <br>who is on the GSA Schedule, <br>and are in the state);
     DSC_Matrix-->StateRepresentation(Verify that state representation <br>is actually needed);
