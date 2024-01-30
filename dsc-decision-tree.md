@@ -12,6 +12,7 @@ graph TD
     DSC_InState--> |No| Eligible4GSA_Schedule(Is this [contract eligibile](https://www.gsa.gov/policy-regulations/policy/acquisition-policy/eligibility-determinations) <br>for the GSA Schedule);
     UseStateContract-->ProcurementVehicle(Finalize procurement vehicle);
     Eligible4GSA_Schedule-->ProcurementVehicle;
+```
     ProcurementVehicle-->IssueRFP(Issue the RFP/RFI);
     IssueRFP-->Negotiation(Negotiation and Award);
 ```
