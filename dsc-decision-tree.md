@@ -15,5 +15,5 @@ graph TD
     DSC_InState-->Eligible4GSA_Schedule(Is this contract available for the GSA Schedule);
     UseStateContract-->ProcurementVehicle(Finalize procurement vehicle);
     Eligible4GSA_Schedule-->ProcurementVehicle;
-    ProcurementVehicle--IssueRFP(Issue the RFP/RFI);
+    ProcurementVehicle-->IssueRFP(Issue the RFP/RFI);
 ```
