@@ -16,6 +16,6 @@ graph TD
 
     UseStateContract-->ProcurementVehicle(Finalize procurement vehicle);
     Eligible4GSA_Schedule-->ProcurementVehicle;
-```
-    ProcurementVehicle-->IssueRFP(Issue the RFP/RFI);
 
+    ProcurementVehicle-->IssueRFP(Issue the RFP/RFI);
+```
