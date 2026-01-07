@@ -39,18 +39,16 @@ gantt
     TAG Updates                   :milestone, m5, 2026-04-15, 0d
 
     section Governance & Workflow
-    New Charter Planning (6mo)    :active, c1, 2026-04-15, 91d
-    Supplements & Workflow Fixes  :2026-05-15, 0d
-    Finalize Charter & AC Submit  :milestone, c2, 2026-07-15, 0d
+    New Charter Planning (6mo)    :active, c1, 2026-04-15, 2026-10-15
+    Supplements & Workflow Fixes  :milestone, c2, 2026-05-15, 0d
+    Finalize Charter & AC Submit  :milestone, c3, 2026-07-15, 0d
 
     section Formal Submissions
     Submit for NOTE Status        :milestone, s1, 2026-06-15, 0d
     Submit for STMT Status        :milestone, s2, 2026-07-15, 0d
 
-    section Transition & Outreach
-    Education & Tooling Outreach  :2026-06-15, 138d
-    
-    section CRITICAL FREEZE
-    NO EDITS / NO MERGES ALLOWED :crit, f1, 2026-07-15, 2026-10-31
+    section Outreach & Freeze
+    Education & Tooling Outreach  :2026-06-15, 2026-10-31
+    CRITICAL FREEZE: NO EDITS     :crit, f1, 2026-07-15, 2026-10-31
     Charter Ends                  :milestone, f2, 2026-10-31, 0d
 ```
