@@ -53,4 +53,4 @@ gantt
     section CRITICAL FREEZE
     NO EDITS / NO MERGES ALLOWED :crit, f1, 2026-07-15, 2026-10-31
     Charter Ends                  :milestone, f2, 2026-10-31, 0d
-    ```
+```
