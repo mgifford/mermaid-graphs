@@ -1,4 +1,4 @@
-Testing a Gantt Chart 
+Testing Gantt Charts
 
 ```mermaid
 gantt
@@ -23,3 +23,34 @@ gantt
     User Acceptance Testing    :2023-12-14, 14d
     Deployment                 :2023-12-28, 7d
 ```
+
+
+```mermaid
+gantt
+    title WSG 2026 Roadmap & Charter Timeline
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b
+    
+    section Technical Foundation
+    Horizontal Review Updates     :milestone, m1, 2026-01-15, 0d
+    Measurability & Impact API    :milestone, m2, 2026-02-15, 0d
+    Conformance & Regulatory      :milestone, m3, 2026-03-15, 0d
+    Wide Review Inclusion         :milestone, m4, 2026-03-15, 0d
+    TAG Updates                   :milestone, m5, 2026-04-15, 0d
+
+    section Governance & Workflow
+    New Charter Planning (6mo)    :active, c1, 2026-04-15, 91d
+    Supplements & Workflow Fixes  :2026-05-15, 0d
+    Finalize Charter & AC Submit  :milestone, c2, 2026-07-15, 0d
+
+    section Formal Submissions
+    Submit for NOTE Status        :milestone, s1, 2026-06-15, 0d
+    Submit for STMT Status        :milestone, s2, 2026-07-15, 0d
+
+    section Transition & Outreach
+    Education & Tooling Outreach  :2026-06-15, 138d
+    
+    section CRITICAL FREEZE
+    NO EDITS / NO MERGES ALLOWED :crit, f1, 2026-07-15, 2026-10-31
+    Charter Ends                  :milestone, f2, 2026-10-31, 0d
+    ```
