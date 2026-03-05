@@ -34,7 +34,7 @@ Basic workflow off elements of a gov-wide crawl.
 
 ```mermaid
 graph TD
-   GotoGoogleSheet-->FindDomain;
+   DisplayChartsAndResults-->FindDomain;
    FindDomain-->SeeChangeOverTime
    SeeChangeOverTime-->SeeDashboard
    SeeDashboard-->DigDownToTopIssues;
