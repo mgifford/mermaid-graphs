@@ -75,7 +75,7 @@ flowchart LR
         direction LR
         RecipeNode["📄 Drupal Recipe Preconditions<br/>(Auto-applied YAML config)"]:::recipeBox
         ContainerNode["☁️ Coder + DDEV Cloud Instances<br/>(Booted 'Before' vs 'After' containers)"]:::envBox
-        ViewerNode["🖥️ [Central Compare Viewer (drupal-compare)]<br/>• Side-by-Side / Onion Skin / DOM Diffing<br/>• Automated Playwright & axe-core Audits<br/>• Real-time Screen Reader & Focus Traps"]:::targetBox
+        ViewerNode["🖥️ Central Compare Viewer<br/>• Side-by-Side Evaluation<br/>• Automated Playwright & axe-core Audits<br/>• Steps to with Checkboxes"]:::targetBox
 
         %% Ensure parallel horizontal paths pointing to the target on the right
         RecipeNode -->|Applies Config| ViewerNode
