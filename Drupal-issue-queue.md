@@ -60,7 +60,7 @@ flowchart LR
     %% Row 1 (Input & AI): Wide Row
     subgraph Row1 [Step 1: Raw Queue Data & AI Triage]
         direction LR
-        QueueNode["[Find Issue in Queue]<br/>(Ticket & Activity Hub)"]:::originBox
+        QueueNode["[Find Issue in Queue]<br/>(Quick Review of Context)"]:::originBox
         AINode["🧠 AI Distills 'Steps' & Test Briefs<br/>(Extracts context & plans execution)"]:::aiBox
 
         QueueNode -->|Ingest Thread| AINode
