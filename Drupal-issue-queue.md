@@ -12,7 +12,7 @@ flowchart LR
     %% ROW 1 (Setup Workspace): Left-to-Right Horizontal Group
     subgraph Row1 [Step 1: Setup Workspace]
         direction LR
-        Node1["[Find Issue in Queue]<br/>(often with 80+ comments)"]:::phaseBox
+        Node1["[Find Issue in Queue]<br/>(Review 20-200 Comments)"]:::phaseBox
         Node2["[Local Stack Setup]<br/>(DDEV/Apache/PHP)"]:::phaseBoxCyan
         Node3["[Steps to Reproduce]<br/>(Content, Fields, Roles)"]:::phaseBoxGreen
 
