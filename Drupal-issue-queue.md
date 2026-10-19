@@ -28,7 +28,7 @@ flowchart LR
         direction RL
         Node6["[Issue Queue Feedback]<br/>(RTBC / Needs Work)"]:::phaseBox
         Node5["[Manual Comparison]<br/>(Dual Browsers)"]:::phaseBoxCyan
-        Node4["[Install With/out Patch]<br/>(Git apply / Drush)"]:::phaseBoxGreen
+        Node4["[Install With Patch (or MR)]<br/>(Git apply / Drush)"]:::phaseBoxGreen
 
         Node4 -->|4. Inspect Diff| Node5
         Node5 -->|5. Verify Changes| Node6
