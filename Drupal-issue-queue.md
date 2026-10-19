@@ -12,11 +12,11 @@ flowchart LR
     %% ROW 1 (Setup Workspace): Left-to-Right Horizontal Group
     subgraph Row1 [Step 1: Setup Workspace]
         direction LR
-        Node1["[Issue Queue Thread]<br/>(80+ comments)"]:::phaseBox
+        Node1["[Find Issue in Queue]<br/>(often with 80+ comments)"]:::phaseBox
         Node2["[Local Stack Setup]<br/>(DDEV/Apache/PHP)"]:::phaseBoxCyan
-        Node3["[Manual Recipe/Setup]<br/>(Content, Fields, Roles)"]:::phaseBoxGreen
+        Node3["[Manual Setup]<br/>(Content, Fields, Roles)"]:::phaseBoxGreen
 
-        Node1 -->|1. Locate Patch| Node2
+        Node1 -->|1. Apply Patch| Node2
         Node2 -->|2. Build Base| Node3
     end
 
@@ -28,7 +28,7 @@ flowchart LR
         direction RL
         Node6["[Issue Queue Feedback]<br/>(RTBC / Needs Work)"]:::phaseBox
         Node5["[Manual Comparison]<br/>(Dual Browsers)"]:::phaseBoxCyan
-        Node4["[Apply Patch & Re-install]<br/>(Git apply / Drush)"]:::phaseBoxGreen
+        Node4["[Install With/out Patch]<br/>(Git apply / Drush)"]:::phaseBoxGreen
 
         Node4 -->|4. Inspect Diff| Node5
         Node5 -->|5. Verify Changes| Node6
@@ -60,7 +60,7 @@ flowchart LR
     %% Row 1 (Input & AI): Wide Row
     subgraph Row1 [Phase 1: Raw Queue Data & AI Triage]
         direction LR
-        QueueNode["[Drupal.org Issue Queue]<br/>(Ticket & Activity Hub)"]:::originBox
+        QueueNode["[Find Issue in Queue]<br/>(Ticket & Activity Hub)"]:::originBox
         AINode["🧠 AI Distills 'Steps' & Test Briefs<br/>(Extracts context & plans execution)"]:::aiBox
 
         QueueNode -->|Ingest Thread| AINode
