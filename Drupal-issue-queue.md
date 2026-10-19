@@ -14,7 +14,7 @@ flowchart LR
         direction LR
         Node1["[Find Issue in Queue]<br/>(often with 80+ comments)"]:::phaseBox
         Node2["[Local Stack Setup]<br/>(DDEV/Apache/PHP)"]:::phaseBoxCyan
-        Node3["[Manual Setup]<br/>(Content, Fields, Roles)"]:::phaseBoxGreen
+        Node3["[Steps to Reproduce]<br/>(Content, Fields, Roles)"]:::phaseBoxGreen
 
         Node1 -->|1. Apply Patch| Node2
         Node2 -->|2. Build Base| Node3
