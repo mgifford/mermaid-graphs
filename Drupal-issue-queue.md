@@ -16,7 +16,7 @@ flowchart LR
         Node2["[Local Stack Setup]<br/>(DDEV/Apache/PHP)"]:::phaseBoxCyan
         Node3["[Steps to Reproduce]<br/>(Content, Fields, Roles)"]:::phaseBoxGreen
 
-        Node1 -->|1. Apply Patch| Node2
+        Node1 -->|1. Validate Bug| Node2
         Node2 -->|2. Build Base| Node3
     end
 
