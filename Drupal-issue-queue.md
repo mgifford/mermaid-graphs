@@ -58,7 +58,7 @@ flowchart LR
     classDef targetBox fill:#062f4f,stroke:#06b6d4,stroke-width:2.5px,color:#22d3ee,font-size:11.5px,font-weight:bold,rx:10px,ry:10px;
 
     %% Row 1 (Input & AI): Wide Row
-    subgraph Row1 [Phase 1: Raw Queue Data & AI Triage]
+    subgraph Row1 [Step 1: Raw Queue Data & AI Triage]
         direction LR
         QueueNode["[Find Issue in Queue]<br/>(Ticket & Activity Hub)"]:::originBox
         AINode["🧠 AI Distills 'Steps' & Test Briefs<br/>(Extracts context & plans execution)"]:::aiBox
@@ -71,7 +71,7 @@ flowchart LR
     AINode ==>|Initializes| ContainerNode
 
     %% Row 2 (Preparation & Verification): Horizontal, wider layout
-    subgraph Row2 [Phase 2: Automated Preparation & Visual Verification]
+    subgraph Row2 [Step 2: Automated Preparation & Visual Verification]
         direction LR
         RecipeNode["📄 Drupal Recipe Preconditions<br/>(Auto-applied YAML config)"]:::recipeBox
         ContainerNode["☁️ Coder + DDEV Cloud Instances<br/>(Booted 'Before' vs 'After' containers)"]:::envBox
