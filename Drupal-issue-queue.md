@@ -1,3 +1,7 @@
+# Drupal Issue Queue Management
+
+## Old
+
 ```mermaid
 flowchart TD
     %% Define Global Styles
@@ -46,10 +50,52 @@ flowchart TD
     Node3 ====> Node4
     
     %% Styling Connections
-    linkStyle 1 stroke:#D69E2E,stroke-width:2px,color:#D69E2E;
-    linkStyle 2 stroke:#319795,stroke-width:2px,color:#319795;
-    linkStyle 3 stroke:#38A169,stroke-width:2px,color:#38A169;
-    linkStyle 4 stroke:#38A169,stroke-width:2px,color:#38A169;
-    linkStyle 5 stroke:#319795,stroke-width:2px,color:#319795;
-    linkStyle 6 stroke:#D69E2E,stroke-width:2px,color:#D69E2E,stroke-dasharray: 5 5;
+    linkStyle 1 stroke:#D69E2E,stroke-width:2px;
+    linkStyle 2 stroke:#319795,stroke-width:2px;
+    linkStyle 3 stroke:#38A169,stroke-width:2px;
+    linkStyle 4 stroke:#38A169,stroke-width:2px;
+    linkStyle 5 stroke:#319795,stroke-width:2px;
+    linkStyle 6 stroke:#D69E2E,stroke-width:2px,stroke-dasharray:5 5;
+```
+
+## New
+
+```mermaid
+flowchart TD
+    %% Define Global Styles
+    classDef title fill:#0f172a,stroke:#0ea5e9,stroke-width:2px,color:#38bdf8,font-size:18px,font-weight:bold,padding:12px;
+    classDef originBox fill:#1e293b,stroke:#0284c7,stroke-width:2px,color:#38bdf8,font-weight:bold;
+    classDef aiBox fill:#271c19,stroke:#d97706,stroke-width:2.5px,color:#f59e0b,font-weight:bold,rx:8px,ry:8px;
+    classDef recipeBox fill:#064e3b,stroke:#059669,stroke-width:2px,color:#34d399,font-weight:bold;
+    classDef envBox fill:#172554,stroke:#2563eb,stroke-width:2px,color:#60a5fa,font-weight:bold;
+    classDef targetBox fill:#062f4f,stroke:#06b6d4,stroke-width:3px,color:#22d3ee,font-size:14px,font-weight:bold,rx:10px,ry:10px;
+
+    %% Headline Title
+    Title[THE CLOUD TESTING PARADIGM]:::title
+
+    %% Node Structures
+    StartNode["[Drupal.org Issue Queue] <br/> (Ticket & Activity Hub)"]:::originBox
+    AINode["🧠 AI Distills 'Steps to Reproduce' & Test Briefs <br/> (Analyzes threads, parses requirements & builds briefs)"]:::aiBox
+    RecipeNode["📄 Drupal Recipe Automatically <br/> Provisions Exact Preconditions <br/> (Applies YAML blueprints: Content, Fields, Roles)"]:::recipeBox
+    ContainerNode["☁️ Coder + DDEV Boots <br/> Dual Cloud Instances (Before & After) <br/> (Stateless, on-demand test environments)"]:::envBox
+    ViewerNode["🖥️ [Central Compare Viewer (drupal-compare)] <br/> • Side-by-Side / Onion Skin / DOM Diffing <br/> • Automated Playwright & axe-core Audits <br/> • Real-time Screen Reader & Focus Traps"]:::targetBox
+
+    %% Sequence flow and logic
+    Title -.-> StartNode
+    StartNode -->|Ingest Thread| AINode
+    
+    %% AI driving the processes
+    AINode -->|Inject Requirements| RecipeNode
+    AINode -->|Initialize Specs| ContainerNode
+    
+    %% Execution down to viewer
+    RecipeNode -->|Applies Config State| ViewerNode
+    ContainerNode -->|Orchestrates Environment| ViewerNode
+
+    %% Styling lines with tech accents 
+    linkStyle 1 stroke:#0284c7,stroke-width:2.5px;
+    linkStyle 2 stroke:#d97706,stroke-width:2.5px,stroke-dasharray:3 3;
+    linkStyle 3 stroke:#d97706,stroke-width:2.5px,stroke-dasharray:3 3;
+    linkStyle 4 stroke:#059669,stroke-width:2px;
+    linkStyle 5 stroke:#2563eb,stroke-width:2px;
 ```
